@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Samuel ❤️</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ff69b4;
+            text-align: center;
+            padding: 20px;
+        }
+        pre {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #ff1493;
+            text-shadow: 1px 1px 5px #ff69b4;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff69b4;
+            animation: pulse 2s infinite;
+        }
+        .compliments {
+            font-size: 1.5em;
+            margin-top: 20px;
+            animation: fadeIn 3s infinite;
+            color: #ff1493;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>SAMUEL ❤️</h1>
+    <pre>
+╔═══╗╔═══╗╔═╗╔═╗╔╗ ╔╗╔═══╗╔╗   
+║╔═╗║║╔═╗║║║╚╝║║║║ ║║║╔══╝║║   
+║╚══╗║║ ║║║╔╗╔╗║║║ ║║║╚══╗║║   
+╚══╗║║╚═╝║║║║║║║║║ ║║║╔══╝║║ ╔╗
+║╚═╝║║╔═╗║║║║║║║║╚═╝║║╚══╗║╚═╝║
+╚═══╝╚╝ ╚╝╚╝╚╝╚╝╚═══╝╚═══╝╚═══╝
+                               
+                               
+    </pre>
+    <pre>
+       *****     *****  
+     ********* *********  
+    *********************  
+     *******************   
+       ****************     
+         ************       
+           *******         
+             ***           
+              *
+    </pre>
+
+    <div class="compliments" id="compliments">
+        Tu es incroyable ! 🌸
+    </div>
+
+    <script>
+        // Liste des compliments kawaii
+        const compliments = [
+            "Tu es une personne lumineuse ! ✨",
+            "Merci d'être toi, tu es unique ! 🌟",
+            "Ton sourire illumine tout autour de toi ! 😊",
+            "Reste toujours aussi adorable ! 🥰",
+            "Tu rends le monde plus beau juste en étant là ! 🌸",
+            "Samuel, tu es un vrai trésor ! 💎",
+            "Tu es le meilleur, ne l'oublie jamais ! 🌟",
+        ];
+
+        // Fonction pour faire défiler les compliments
+        let index = 0;
+        const complimentElement = document.getElementById("compliments");
+
+        setInterval(() => {
+            complimentElement.textContent = compliments[index];
+            index = (index + 1) % compliments.length;
+        }, 3000); // Change tous les 3 secondes
+    </script>
+</body>
+</html>
